@@ -5,11 +5,15 @@
  * is your room number?"
  */
 
+import 'dart:convert';     //needed later?
+
 List divisors = [];
+List divRange = [];
 int divSum = 0;
 int divSumEx = 0;
 int s = 1;
 int t = 0;
+Map divRangeMap = new Map();
 
 void main() { 
   for (int s = 1; s <= 100; s++){
@@ -33,14 +37,22 @@ void main() {
   print('sum of divisors is now ' + divSum.toString());
   print('sum of divisors (excluding number itself) is now ' +
       (divSum - s).toString());
-  if (divSumEx > s){
-       t += 1;
+
+  if (divSumEx > s) {
+    t += 1;
+    //for (final y in divisors) {
+     // divRangeMap.addAll(K, V);
+      //divRangeMap.putIfAbsent(divisors.insert(s, element), ifAbsent)
+    //}
   }
-  print('t, the number of divSumEx > s = '+t.toString());
+  print('divisors are now: ' + divisors.toString());
+  print('divisorsRange are now: ' + divRange.toString());
+
+     //print('t, the number of divSumEx > s = '+t.toString());
   divSum = 0;
   divisors = [];
   }
 
   //outside loop
-  print('t, the number of divSumEx > s = '+t.toString());
+  print('\nt, the number of divSumEx > s = '+t.toString());
 }
