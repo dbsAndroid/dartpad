@@ -1,4 +1,4 @@
-c/**
+/**
  * “You are in a hotel and you forgot what room number you are in. You remember that the sum
  *  of its divisors (excluding the number itself) is greater than the number, yet there is
  *  no subset of those divisors that add up to the number itself. There are 100 rooms. What
