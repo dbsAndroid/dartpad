@@ -1,4 +1,4 @@
-/**
+c/**
  * “You are in a hotel and you forgot what room number you are in. You remember that the sum
  *  of its divisors (excluding the number itself) is greater than the number, yet there is
  *  no subset of those divisors that add up to the number itself. There are 100 rooms. What
@@ -33,7 +33,7 @@ void main() {
   	}
   divisors.add(s);
   print(s);
-  print(divisors);
+  print(divisors);  //array
   int divLength = (divisors.length);
   print('length of divisors is now ' + divLength.toString());
 
@@ -51,7 +51,7 @@ void main() {
     sumExNums.add(s);
     //create HashMap here to find subgroups of each array?
   }
-  print('divisors are now: ' + divisors.toString());
+  print('divisors are now: ' + divisors.toString());     //divisors as string
   //print('divisorsRange are now: ' + divRange.toString());
   //print('t, the number of divSumEx > s = '+t.toString());
 
